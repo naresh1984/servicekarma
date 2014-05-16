@@ -1,0 +1,293 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="" content="">
+<title>My Profile</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+	/*$('.open-popup-link').magnificPopup({
+		type:'inline',
+		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	});*/
+	
+	/*$('.open-popup-link').magnificPopup({		
+	  type:'inline',
+	  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+	});	*/
+	$( document ).ready(function() {
+		$('.edit-profile').magnificPopup({
+		  items: {
+			  src: '#EditProfilePopup',
+			  type: 'inline'
+		  }
+		});	
+	});	
+	
+    </script>
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+
+<!--				check box				-->
+<script type='text/javascript' src="js/custom-form-elements.js"></script>
+
+<!--					check box				-->
+
+</head>
+<body class="main_databg">
+<div id="wrap">
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+    <header>
+      <div class="top_color"> 
+        <!--<ul>
+            	<li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>--> 
+        
+        <a href="" class="school_logo"><img src="img/servicekarma-logo.png" /></a>
+        <ul class="top-nav">
+          <li>
+            <div class="user-picture"><img src="img/icon_profile-preview-small.png" alt="Profile"></div>
+            <b><span>Welcome</span><a href="#">John!</a></b></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </header>
+   <div id="main">
+    <section id="data_container clearfix">
+    
+    
+    
+    <div class="clear40"></div>
+      <section id="portfolio_wrapper" class="clearfix">
+      
+        <section class="por_contentainer clearfix">
+          <figure class="por_picture"> <img src="img/icon_profile-preview-big.png" alt="Profile Preview" > </figure>
+          <section class="por_content">
+            <div class="por_content_title">
+              <h3 class="text-white"><strong class="left">John Smith</strong><span class="right">Irvington High</span></h3>
+              <div class="clear"></div>
+            </div>
+            <div class="por_content_inner">
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" class="theme_table pro_table">
+                <tr>
+                  <td><a href="mailto:jsmith@gmail.com">jsmith@gmail.com</a></td>
+                </tr>
+                <tr>
+                  <td>A10045678</td>
+                </tr>
+                <tr>
+                  <td>9th grade</td>
+                </tr>
+                <tr>
+                  <td>201 S 4th Street  Apt 532<br>
+                    San Jose CA - 95112<br>
+                    408-727-1100 </td>
+                </tr>
+              </table>
+              <div class="clear"></div>
+              <div class="button-pro clearfix">
+                <button class="button button-bluenew btn-two-half">Edit Profile</button>
+                <button class="button button-bluenew btn-two-quater b-top-space">Change&nbsp;Password</button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+      <!--white-popup mfp-hide    (Add mfp-hide for hid popup)-->
+      <div id="EditProfilePopup" class="pro_window login_area btmpadding ">
+        <div class="login_inner">
+          <div class="login_inline">
+            <div class="form_cont_full pro_window_header clearfix">
+              <h4>Edit Profile</h4>
+              <a href="#" class="btn-popup-close"></a>
+              <div class="clear"></div>
+            </div>
+            <div id="prowrap">
+            <div class="form_cont_full clearfix">
+              <figure><img src="img/icon_profile-preview-big.png"></figure>
+              <button class="button button-bluenew btn-third-one">Change Profile Picture</button>
+            </div>
+            
+            <!--raw #1-->
+           
+            <div class="form_cont margin_right">
+              <label>First Name</label>
+              <small class="alt_sml"></small>
+              <input name="" type="text" placeholder="First Name">
+            </div>
+            <div class="form_cont">
+              <label>Last Name</label>
+              <small class="alt_sml"></small>
+              <input name="" type="text" placeholder="Last Name">
+            </div>
+            <div class="clear"></div>
+            
+            <!--raw #2-->
+            <div class="form_cont margin_right">
+              <label>Address</label>
+              <small class="alt_sml"></small>
+              <textarea class="expandable" placeholder="Address Comes here" rows="1" cols="1"></textarea>
+            </div>
+            <div class="form_cont">
+              <label>City</label>
+              <small class="alt_sml"></small>
+              <input name="" type="text" placeholder="City">
+            </div>
+            <div class="clear"></div>
+            
+            <!--raw #3-->
+            <div class="form_cont margin_right">
+              <label>State</label>
+              <small class="alt_sml"></small>
+              <select name="">
+                <option>Select State</option>
+              </select>
+            </div>
+            <div class="form_cont">
+              <label>Zipcode</label>
+              <small class="alt_sml"></small>
+              <input name="" type="text" placeholder="Zipcode">
+            </div>
+            <div class="clear"></div>
+            
+            <!--raw #4-->
+            <div class="form_cont margin_right">
+              <label>Phone Number</label>
+              <small class="alt_sml"></small>
+              <input name="" type="tel" class="sm_input">
+              <input name="" type="tel" class="sm_input">
+              <input name="" type="tel" class="mid_input">
+            </div>
+            <div class="form_cont">
+              <label>Email</label>
+              <small class="alt_sml"></small>
+              <input name="" type="email" placeholder="name@domain.com">
+              <small class="alt_under">Email will be your username</small> </div>
+            <div class="clear"></div>
+            
+            <!--raw #5-->
+            <div class="form_cont margin_right">
+              <label>Establishment</label>
+              <small class="alt_sml"></small>
+              <select name="">
+                <option>Select</option>
+              </select>
+            </div>
+            <div class="form_cont">
+              <label>Grade</label>
+              <small class="alt_sml"></small>
+              <select name="">
+                <option>Select</option>
+              </select>
+            </div>
+            <div class="clear"></div>
+            <div class="form_cont buton_right">
+            	<button class="button button-bluenew btn-two-half left">Save</button>
+                <button class="button button-darkgray btn-two-half right">Cancel</button>
+            </div>
+            
+            <div class="clear"></div>
+            </div><!--prowrap-->
+          </div>
+        </div>
+      </div>
+      
+      <div id="EditProfilePopup" class="pro_window login_area btmpadding ">
+        <div class="login_inner">
+          <div class="login_inline">
+            <div class="form_cont_full pro_window_header clearfix">
+              <h4>Change Password</h4>
+              <a href="#" class="btn-popup-close"></a>
+              <div class="clear"></div>
+            </div>
+<div id="prowrap">
+            <!--raw #1-->
+            <div class="form_cont margin_right">
+              <label>Current Password</label>
+              <small class="alt_sml"></small>
+              <input name="" type="text" placeholder="">
+            </div>
+            <div class="clear"></div>
+            
+            <!--raw #2-->
+            <div class="form_cont margin_right">
+              <label>New Password</label>
+              <small class="alt_sml"></small>
+              <input name="" type="text" placeholder="">
+            </div>
+            <div class="clear"></div>
+            
+            <!--raw #3-->
+            <div class="form_cont margin_right">
+              <label>Confirm Password</label>
+              <small class="alt_sml"></small>
+              <input name="" type="text" placeholder="">
+            </div>
+            <div class="clear"></div>
+            
+            <!--raw #4-->
+            <div class="clear"></div>
+            
+            <!--raw #5-->
+            <div class="clear"></div>
+            <div class="form_cont buton_right">
+            	<button class="button button-bluenew btn-two-half left">Save</button>
+                <button class="button button-darkgray btn-two-half right">Cancel</button>
+            </div>
+            <div class="clear"></div>
+            </div><!--prowrap-->
+          </div>
+        </div>
+      </div>
+      
+      
+    </section>
+   
+  </div>
+</div>
+</div><!--main-->
+</div><!--wrap-->
+ <footer><small>Servicekarma 2013</small> 
+      
+      <!--<div class="soc_area">
+        	<a href="" class="fbicn"></a><a href="" class="twticn"></a><a href="" class="blgicn"></a>
+        </div>-->
+    <div class="ftr_link"> <a href="">About</a> &nbsp;| <a href="">contact</a> &nbsp;| <a href="">feedback</a> </div>
+    </footer>
+</body>
+</html>

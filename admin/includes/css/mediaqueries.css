@@ -1,0 +1,42 @@
+/*Styles for screen 980px and higher*/
+.login {width:350px;}
+@media screen and (min-width: 980px) {
+	.container{max-width:980px;}
+}
+
+/*Styles for screen 785px and lower*/
+@media screen and (max-width: 785px) {
+	.col5,.col7 {float:none; width:100%;}
+	.sidebox {margin-top:20px;}
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	header nav {height: auto;}
+	header nav .container {padding:0;}
+  	header nav #menu li{width:50%;}
+	header nav #menu li a{width:100%; padding:0px; margin:0; text-align:center;	border-bottom: 1px solid #388fbb; border-right: 1px solid #388fbb;}
+}
+
+/*Styles for screen 480px and lower*/
+@media screen and (max-width: 480px) {
+	.loginbox {width:auto; padding:20px;}
+	.loginbox label, input[type=text], input[type=password], textarea, select {width:70%;}
+	.loginbox .button {margin-left:0;}
+	header nav {border-bottom: 0;}
+	header nav ul {display: none; height: auto;}
+	header nav a#pull {display: block; background-color: #054362; width: 100%; position: relative;}
+	header nav a#pull span{padding-left:10px;}
+	header nav a#pull:after {content:""; background: url(../images/nav-icon.png) no-repeat;	width: 30px; height: 30px; display: inline-block; position: absolute; right: 15px; top: 10px;}
+	header #logo a {width:100%; clear:both; background-position:top center;}
+	header .userdetails {margin:0 0 30px 0; padding-top:0px;}
+	.login {width:250px;}
+}
+
+/*Styles for screen 320px and lower*/
+@media only screen and (max-width : 320px) {
+	header nav li {display: block; float: none; width: 100%;}
+	header nav li a {border-bottom: 1px solid #576979;}
+	.login {width:200px;}
+}
+
